@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style-form.css" />
+  </head>
+  <body>
+    <!---LOGO Y MENUS  -->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img height="30" width="" src="img\unnamed.png" alt="mllogo" /> </a
+      ><!-- Aqui se crea el logo-->
+      <!--- aqui se crea la clase del menu horizontal -->
+      <ul class="Menu-horizontal">
+        <li><a href="">Productos </a>
+          <ul class="Menu-vertical">
+            <li><a href="">Productos en descuento</a></li>
+            <li><a href="">Productos en remate</a></li>
+            <li><a href="">Productos robados D:</a></li>
+      
+        </li>
+        
+        </li>
+      </ul>
+        <li>
+          <a href="">Servicios </a>
+          <ul class="Menu-vertical">
+            <li><a href="">Pago Servicios</a></li>
+            <li><a href="">Pago Impuestos </a></li>
+            <li><a href="">Transferencias </a></li>
+            <li><a href="">Financieros </a></li>
+          </ul>
+        </li>
+        <li><a href=""> Banca por internet </a></li>
+        <li><a href=""> Contactanos </a></li>
+      </ul>
+    </nav>
+    
+    <!---SECCION PRODUCTOS-->
+    <section class="seccion-productos">
+      <div class="div-gral-prod">
+        <div class="div-prod-texto">
+          <h1>LO DESTACADO HOY</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            aliquid aut rerum error, aliquam, harum minus similique ex ipsam
+            asperiores quo natus dignissimos nam eveniet veritatis, fugit
+            aspernatur voluptas blanditiis! :o
+          </p>
+        </div>
+        <div class="div-prod-img">
+          <img src="img/oferta.webp" alt="oferta1" />
+        </div>
+
+    </section>
+
+
+      <section class = "seccion-video">
+        <div class = "div-video-text">
+          <h1> ASI PUEDES APRENDER A COMPRAR </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolores distinctio deserunt possimus ipsam officia est 
+            dolorum quidem necessitatibus sit culpa, odio dicta
+             vero, fuga expedita, perferendis ea nesciunt quasi totam.
+          </p>
+        </div>
+
+        <div class = "div-prod-video">
+          <iframe width="560"
+           height="315" 
+           src="https://www.youtube.com/embed/UHBNLmN2pSs?si=tOy9etJiYLaGisHE"
+            title="YouTube video player" 
+            frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </section>
+        <section class="seccion-formulario">
+          <div class="div-cont-formulario">
+            <h2> Trabaja con nosotros </h2>
+            <form class="formulario-trabaja">
+              <!----LABEL/INPUT---->
+              <div class="campo">
+                <label  for = "nombre " > Nombres: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres"/>
+              </div>
+              <div class="campo">
+                <label for ="apellido" > Apellidos: </label>
+                <input type = "text" id = "apellido" name="apellidos" placeholder="Ingrese su apellido" />
+              </div>
+              <div class = "campo">
+                <label for = "fecha"> Fecha de Nacimiento</label>
+              </div>
+              <!--MENU DESPLEGABLE-->
+              <div class="campo">
+                <label for ="pais"> Pais:</label>
+                <select name="pais" id="pais">
+                <option value ="">seleccione un pais </option>
+                <option value ="peru">Peru</option>
+                <option value ="chile">Chile </option>
+                <option value ="bolivia">Bolivia </option>
+                <option value ="argentina">Argentina </option>
+              </select>
+                
+              </div>
+              
+              <!--CHECKBOX-->
+              <div class="campo">
+                <label> Intereses: </label>
+                <ul class = "Lista-de-checkbox">
+                  <label><input type = "checkbox" name= "Intereses" value="a" >a <label></li>
+                    <label><input type = "checkbox" name= "Intereses" value="b" >b <label></li>
+                      <label><input type = "checkbox" name= "Intereses" value="c" >c <label></li>
+                        <label><input type = "checkbox" name= "Intereses" value="d">d <label></li>
+
+
+              </div>
+              <!--RADIO-->
+              <label>Sexo </label>
+              <ul class= "lista-radio">
+                <li>
+                  <label><input type = "radio" name = "sexo" value  ="femenino">Femenino </label>
+                </li>
+                <li>
+                  <label><input type = "radio" name = "sexo" value  ="masculino">Masculino </label>
+                </li>
+                
+                </ul>
+                <button type = "submit"> Enviar </button>
+            </form>
+          </div>
+          </section>
+          <section id = "footer">
+            <footer class = "footer">
+              <div class = "footer-container">
+                <!---LOGO Y NOMBRE---->
+                <div class ="footer-brand">
+                  <img 
+                  src="img\unnamed.png "
+                  alt= "logo"
+                  class = "footer-logo"
+                  />
+                  <p>Mercado Libre</p>
+                  <small> 2025 Todos los derechos reservados</small> 
+                </div>
+                <!---Enlaces-->
+                <div class = "footer-links">
+                  <h4> Legal </h4>
+                  <a href="doc\obtenerDocumento.pdf">
+                    Politica de privacidad </a>
+                     <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="doc\obtenerDocumento.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+                    
+  </body>
+</html>
